@@ -4,6 +4,7 @@ import cors from '@fastify/cors'
 
 const app = Fastify()
 app.register(cors)
+
 const prisma = new PrismaClient()
 
 app.get('/habits', () => {
