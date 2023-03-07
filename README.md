@@ -11,6 +11,10 @@ For Local Development:
 
 - to generate ERD from Prisma, 'execute npx prisma generate'
 
+ **Frontend**
+
+- to run the frontend, enter into web folder then execute 'npm run dev'
+
 
 **Mobile**
 
