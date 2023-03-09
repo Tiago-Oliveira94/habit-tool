@@ -2,15 +2,17 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient()
 
 const firstHabitId = '5376c0a6-da7f-44ab-be55-320a51734e9e'
-const firstHabitCreationDate = new Date('2023-01-23T13:00:00.000')
+const firstHabitCreationDate = new Date('2023-01-23T00:00:00.000')
 
 const secondHabitId = '0361cf6d-78c8-45df-817b-7e2e49ceecb4'
-const secondCreationDate = new Date('2023-01-24T13:00:00.000')
+const secondCreationDate = new Date('2023-01-24T00:00:00.000')
 
 const thirdHabitId = 'cfa55460-1851-4eb5-a158-0db7cb6a98d4'
-const thirdCreationDate = new Date('2023-01-25T13:00:00.000')
+const thirdCreationDate = new Date('2023-01-25T00:00:00.000')
 
 async function run() {
+    await prisma.habitWeekDays.deleteMany()
+    await prisma.dayHabit.deleteMany()
     await prisma.habit.deleteMany()
     await prisma.day.deleteMany()
 
@@ -68,7 +70,7 @@ async function run() {
             //monday with 1 habit complete/available
             prisma.day.create({
                 data: {
-                    date: new Date('2023-01-23T13:00:00.000z'),
+                    date: new Date('2023-01-23T03:00:00.000z'),
                     dayHabits: {
                         create: {
                             habit_id: firstHabitId
@@ -80,7 +82,7 @@ async function run() {
             //tuesday with 1 habit complete/available
             prisma.day.create({
                 data: {
-                    date: new Date('2023-01-24T13:00:00.000z'),
+                    date: new Date('2023-01-24T03:00:00.000z'),
                     dayHabits: {
                         create: {
                             habit_id: firstHabitId
@@ -92,7 +94,7 @@ async function run() {
             //wednesday with 2 habits complete/available
             prisma.day.create({
                 data: {
-                    date: new Date('2023-01-25T13:00:00.000z'),
+                    date: new Date('2023-01-25T03:00:00.000z'),
                     dayHabits: {
                         create: [
                             { habit_id: firstHabitId },
