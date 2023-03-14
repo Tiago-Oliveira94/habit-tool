@@ -7,7 +7,9 @@ app.register(cors)
 app.register(routes)
 
 const port = 3333
+const host = '192.168.100.121'
 
 app.listen({
-    port: port
-}).then(() => { console.log(`Server is running on port ${port}!`) })
+    port: port,
+    host: host
+}).then(() => { console.log(`Server is running on port ${host}:${port}!`) })
