@@ -11,6 +11,8 @@ To build this, i used technologies like:
 - ReactNative: https://github.com/facebook/react-native
 - Tailwindcss: https://github.com/tailwindlabs/tailwindcss
 - Expo: https://github.com/expo/expo
+- ViteJS: https://github.com/vitejs/vite
+- dayJS: https://github.com/iamkun/dayjs
 
 
 For Local Development:
