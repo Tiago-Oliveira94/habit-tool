@@ -32,7 +32,7 @@ export function Home() {
             const response = await api.get('/summary')
             setSummary(response.data)
         } catch (error) {
-            Alert.alert('Ops', 'It was not possible to load Habits Summary.')
+            Alert.alert('Ops...', 'It was not possible to load Habits Summary.')
             console.log(error)
         } finally {
             setLoading(false)
@@ -76,7 +76,7 @@ export function Home() {
                     <View className="flex-row flex-wrap">
                         {
                             datesFromYearStart.map(date => {
-                                const dayWithHabbits = summary.find(day => {
+                                const dayWithHabits = summary.find(day => {
                                     return dayjs(date).isSame(day.date, 'day')
                                 })
 
@@ -84,8 +84,8 @@ export function Home() {
                                     <HabitDay
                                         key={date.toISOString()}
                                         date={date}
-                                        amount={dayWithHabbits?.amount}
-                                        completed={dayWithHabbits?.completed}
+                                        amount={dayWithHabits?.amount}
+                                        completed={dayWithHabits?.completed}
                                         onPress={() => navigate('habit', { date: date.toISOString() })}
                                     />
                                 )
