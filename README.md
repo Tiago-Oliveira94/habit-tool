@@ -1,8 +1,8 @@
 # habit-tool
 A complete habit manager application with web and mobile interfaces. You can create habits for every day of week and track your progress in one of those beautiful and smooth interfaces. I did it to learn more about frontend and mobile, especially styling, smooth transitions, small animations and also learn some new nodeJS libraries.
-
+\
+\
 ![habit-tool-frontend](https://user-images.githubusercontent.com/46850078/225665417-b02bb9ff-6f8f-4870-aa97-6ed93a8543af.png)
-
 
 To build this, i used technologies like:
 
@@ -19,7 +19,7 @@ To build this, i used technologies like:
 - dayJS: https://github.com/iamkun/dayjs
 - clsx: https://github.com/lukeed/clsx
 
-
+\
 For Local Development:
 
  **Backend**
