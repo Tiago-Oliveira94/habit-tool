@@ -9,10 +9,12 @@ To build this, i used technologies like:
 - Zod: https://github.com/colinhacks/zod
 - React: https://github.com/facebook/react
 - ReactNative: https://github.com/facebook/react-native
+- ReactNative Reanimated: https://github.com/software-mansion/react-native-reanimated
 - Tailwindcss: https://github.com/tailwindlabs/tailwindcss
 - Expo: https://github.com/expo/expo
 - ViteJS: https://github.com/vitejs/vite
 - dayJS: https://github.com/iamkun/dayjs
+- clsx: https://github.com/lukeed/clsx
 
 
 For Local Development:

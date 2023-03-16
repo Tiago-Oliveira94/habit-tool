@@ -7,7 +7,7 @@ app.register(cors)
 app.register(routes)
 
 const port = 3333
-const host = '192.168.100.121'
+const host = '0.0.0.0'
 
 app.listen({
     port: port,
