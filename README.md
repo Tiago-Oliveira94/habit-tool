@@ -3,6 +3,14 @@ A complete habit manager application with web and mobile interfaces. You can cre
 \
 \
 ![habit-tool-frontend](https://user-images.githubusercontent.com/46850078/225665417-b02bb9ff-6f8f-4870-aa97-6ed93a8543af.png)
+\
+\
+\
+![new-habit](https://user-images.githubusercontent.com/46850078/225669997-3f88c530-478e-4d88-90c4-2fb4da87de67.png)
+\
+\
+\
+![day-habbit](https://user-images.githubusercontent.com/46850078/225671317-5f0b25c7-7561-474f-bf5b-a510d6d48a0c.png)
 
 To build this, i used technologies like:
 
